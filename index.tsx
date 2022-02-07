@@ -4,7 +4,7 @@ import './style.css';
 import 'semantic-ui-css/semantic.min.css';
 
 import ItemCard from './ItemCard';
-import addItem from './AddComponent';
+import AddComponent from './AddComponent';
 interface AppProps {}
 interface AppState {
   name: string;
@@ -15,7 +15,7 @@ class App extends Component<AppProps, AppState> {
     return (
       <div>
         <h1>To Do App</h1>
-        <addItem></addItem>
+        <AddComponent></AddComponent>
         {/* <ItemCard></ItemCard> */}
       </div>
     );

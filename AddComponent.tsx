@@ -4,6 +4,9 @@ import './style.css';
 import 'semantic-ui-css/semantic.min.css';
 import { Button, Form } from 'react-bootstrap';
 
+const add = () => {
+
+}
 const addItem = () => {
   return (
     <div>
@@ -17,7 +20,7 @@ const addItem = () => {
           <Form.Control type="text" placeholder="Password" />
         </Form.Group>
         <span>
-          <Button variant="success">Add</Button>
+          <Button variant="success" onClick = {add()}>Add</Button>
         </span>
       </Form>
     </div>
