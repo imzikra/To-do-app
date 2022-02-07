@@ -14,8 +14,15 @@ const item = () => {
             With supporting text below as a natural lead-in to additional
             content.
           </Card.Text>
-          <Button className="primary">Edit</Button>
-          <Button className="primary">Delete</Button>
+          <span>
+            <Button variant="success" className="btn_name">
+              Edit
+            </Button>
+          </span>
+
+          <span>
+            <Button variant="danger">Delete</Button>
+          </span>
         </Card.Body>
       </Card>
     </div>
