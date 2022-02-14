@@ -24,7 +24,7 @@ const addItem = () => {
     //console.log(title);
     setItem({ ...item, item.title: title, item.description: description });
     console.log("item" + item);
-  };
+  }
   return (
     <div>
       <Form>
