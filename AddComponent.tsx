@@ -22,9 +22,9 @@ const addItem = () => {
   const add = (event: any) => {
     event.preventDefault();
     //console.log(title);
-    setItem({ ...item, item.title: title, item.description: description });
-    console.log("item" + item);
-  }
+    setItem({ ...item, title: title, description: description });
+    console.log('item' + item);
+  };
   return (
     <div>
       <Form>
