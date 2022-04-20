@@ -24,7 +24,8 @@ const addItem = () => {
   };
 
   const add = (event: any) => {
-    event.preventDefault();
+    //event.preventDefault();
+
     //console.log(title);
     setItem({ ...item, title: title, description: description });
 
@@ -58,6 +59,7 @@ const addItem = () => {
             </Button>
           </span>
         </Form>
+        <br />
       </div>
       <div> {!isDataBlank && <ItemCard item={item}></ItemCard>} </div>
     </div>
