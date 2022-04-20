@@ -4,16 +4,13 @@ import './style.css';
 import 'semantic-ui-css/semantic.min.css';
 import { Button, Card } from 'react-bootstrap';
 
-const item = () => {
+const itemCard = (props) => {
   return (
     <div className="card">
       <Card>
-        <Card.Header>Task 1</Card.Header>
+        <Card.Header>{props.item.title}</Card.Header>
         <Card.Body>
-          <Card.Text>
-            With supporting text below as a natural lead-in to additional
-            content.
-          </Card.Text>
+          <Card.Text>{props.item.description}</Card.Text>
           <span>
             <Button variant="success" className="btn_name">
               Edit
@@ -28,4 +25,4 @@ const item = () => {
     </div>
   );
 };
-export default item;
+export default itemCard;
